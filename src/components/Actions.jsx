@@ -2,12 +2,9 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function Actions() {
-	
-
 	const dispatch = useDispatch(); 
-
 	function handleMarkAllComplete(){
-		dispatch({type: "mark_all_complete"})
+		dispatch({type: "MARK_ALL_COMPLETED"})
 	}
 
 	function handlClearCompleted(){ 

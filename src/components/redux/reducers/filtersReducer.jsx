@@ -1,11 +1,8 @@
-
-
 import { colorsList } from "../../ColorFilter";
 
 const selectedColors = colorsList; 
 
 export function statusFilterReducer(state = "all", action) {
-
   switch (action.type) {
     case "all": {
       return "all";
@@ -25,9 +22,7 @@ export function statusFilterReducer(state = "all", action) {
 
 
 export function colorsFilterReducer(state = [], action) {
-
   const { type, color } = action;
-
   switch (type) {  
     case "add_color":
       return [...state, color];

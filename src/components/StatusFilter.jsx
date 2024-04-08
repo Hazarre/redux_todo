@@ -7,7 +7,6 @@ const statusList = ["all", "active", "completed"]
 
 
 export function StatusFilter () {
-
   const statusFilter = useSelector((state) => state.statusFilter);
   const dispatch = useDispatch();
 
